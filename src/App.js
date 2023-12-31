@@ -24,6 +24,9 @@ export default function App() {
       setMovies(data.results);
       console.log(data.results)
     }catch(error){console.log(error.message)}}
+
+
+
     useEffect(()=>{
       fetchMovies()
     },[])
@@ -31,9 +34,11 @@ export default function App() {
       fetchMovies(genres)
     },[genres])
     const HandleGenre=(gen)=>{
-      console.log(gen)
+      // console.log(gen)
       setGenres(gen)
     }
+
+    
   return (
     <div className='App'>
       <div className='row'>

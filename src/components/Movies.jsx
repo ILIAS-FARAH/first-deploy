@@ -9,7 +9,7 @@ export default function Movies({movies,genrename}) {
             movies.map((movie)=>(
                 <Movie 
                 movie={movie}
-                key={movie.id}
+                key={movie.id}          
                 />
             ))
         }

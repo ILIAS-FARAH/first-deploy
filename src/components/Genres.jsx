@@ -90,7 +90,7 @@ export default function Genres({onGenre,selectedGenre}) {
                         className={
                             genre.id == selectedGenre.id
                                 ?"list-group-item active"
-                               :"list-group-item"
+                               :"list-group-item-"
                         }
                         onClick={() => onGenre(genre)}
                     >
